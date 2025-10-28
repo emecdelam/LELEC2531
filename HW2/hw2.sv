@@ -14,17 +14,17 @@ always_ff @(posedge clk)
 	
 always_comb begin
 	case (state)
-		S: if (buttons[2])			nextstate = J;
-			else if (buttons[1]) 		nextstate = R;
-			else				nextstate = S;
-		R: if (buttons[2])			nextstate = J;
-			else if (buttons[1])		nextstate = R;
-			else				nextstate = S;
+		S: if (buttons[2])						nextstate = J;
+			else if (buttons[1]) 				nextstate = R;
+			else								nextstate = S;
+		R: if (buttons[2])						nextstate = J;
+			else if (buttons[1])				nextstate = R;
+			else								nextstate = S;
 		J: if ((buttons & 3'b101) == 3'b101)	nextstate = D;
-			else if (buttons[1])		nextstate = R;
-			else 				nextstate = S;
-		D: 					nextstate = S;
-		default:				nextstate = S;
+			else if (buttons[1])				nextstate = R;
+			else 								nextstate = S;
+		D: 										nextstate = S;
+		default:								nextstate = S;
 	endcase
 end
 
