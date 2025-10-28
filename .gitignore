@@ -1,0 +1,8 @@
+*
+
+!.gitignore
+!README
+!*/
+!**/*.sv
+
+LAB*/
