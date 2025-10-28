@@ -1,4 +1,3 @@
-`timescale 1ns/1ps 	
 module Homework_2 (input logic clk,
 input logic reset,
 input logic [2:0] buttons,

@@ -1,4 +1,3 @@
-`timescale 1ns/1ps 
 module Exercise_2 (MyInput,MyConstantSelect,MyOperation,MyStatus,MyOutput); 
 input [7:0] MyInput; 
 input [1:0] MyConstantSelect; // 0: Constant = 1, 1: Constant = 3, // 2: Constant = 5, 3: Constant = 7 
